@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloregistrar.css">
+    <title>Registrar</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acceder.html">Login</a></li>
+            <li><a href="foro.html">Foro</a></li>
+            <li><a href="registrar.html">Registrar</a></li>
+            <li><a href="imagenes.html">Imagenes</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <h2>Formulario de Registro</h2>
+
+    <form id="FormularioRegistrar" action="/guardar_usuario" method="post">
+
+
+        <div>
+            <label for="correo">Correo:</label>
+            <input type="text" id="correo" name="correo" placeholder="micorreo@email.com">
+        </div>
+        
+        </div>
+        <label for="clave">Clave:</label>
+        <input type="password" id="clave" name="clave">
+        <div>
+        <div>
+            <label for="rol">Tipo de usuario</label>
+            <select id="rol" name="rol">
+                <option value="" disabled selected>Selecciona un rol</option>
+                <option value="1">Administrador</option>
+                <option value="2">Empleado</option>
+            </select>
+        </div>
+            
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+
+    
+</body>
+</html>
